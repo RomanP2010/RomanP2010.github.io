@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Datación Radiométrica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Trabajo Práctico Nº1: Datación Radiométrica y Geología</h1>
+    <p><strong>Integrantes:</strong> Joaquin Imel, David Navarro, Tobias Chouela, Roman Polak, Rafaela Jenin</p>
+
+    <h2>Simulador de desintegración</h2>
+    <p>La datación radiométrica es una técnica usada por la geología y la arqueología para estimar la edad de materiales antiguos, como rocas o restos orgánicos, a partir de la desintegración de isótopos radiactivos. Se basa en que ciertos elementos se transforman en otros a un ritmo constante y conocido, lo que permite utilizar este proceso como un reloj natural. Por ejemplo, el carbono-14, que se forma en la atmósfera por rayos cósmicos, se incorpora a los organismos vivos y comienza a desintegrarse al morir. Midiendo cuánto 14C queda, es posible calcular cuánto tiempo ha pasado desde la muerte del organismo. Esta técnica es útil hasta unos 50.000 años.</p>
+
+    <label for="isotopo">Elige un isótopo:</label>
+    <select id="isotopo">
+      <option value="5730">Carbono-14 (5730 años)</option>
+      <option value="1250000000">Potasio-40 (1.25 mil millones de años)</option>
+    </select>
+
+    <label for="edad">Edad de la muestra (años):</label>
+    <input type="number" id="edad" placeholder="Ej: 10000">
+
+    <button id="boton">Calcular desintegración</button>
+    <div id="resultado"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
